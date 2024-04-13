@@ -1,11 +1,9 @@
-Create a python package to perform mathematical operations
+Create a python package to perform operations
     1. First Module should have below functionalities : Module name -> pymath
         1. add
         2. subtract
         3. multiply
-        4. division
-        5. remainder
 
     2.Second Module should have below functionalities: Module Name -> pystr
-        1. reverse # reverse number as well as string
+        1. reverse # reverse string
         2. add # add two string or one number and strings
