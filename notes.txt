@@ -1,11 +1,40 @@
-Create a python package to perform mathematical operations
-    1. First Module should have below functionalities : Module name -> pymath
-        1. add
-        2. subtract
-        3. multiply
-        4. division
-        5. remainder
+Dynamic typed language
+    No need to mention the data type for the primitive variable declarations
+    E.g: Python, JavaScript
 
-    2.Second Module should have below functionalities: Module Name -> pystr
-        1. reverse # reverse number as well as string
-        2. add # add two string or one number and strings
+    ----------------------------
+    x = 1 # runtime x: type -> int
+    x = 1.2 # runtime x: type -> float
+    x = "x" # runtime x: type -> str
+    x = True # runtime x: type -> bool
+    x = b'cecrv' # runtime x: type -> byte
+
+Python:
+    type(x) -> return class name of variable x
+
+    isinstance(x, class_name)
+
+    x = Bool (True/False)
+    isinstance(x, int)
+
+------------------------------------------------------------------------------------------------------------
+Data Structure:
+    List
+    ============================================
+    can contain n number of data(any type)
+    enclosed within []
+    x = list()
+    functions
+    -----------
+
+
+
+
+    Tuple
+    Dictionary
+    Set
+
+    LinkedList
+    Array
+    Stack
+    Tree
