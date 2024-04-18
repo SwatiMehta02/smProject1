@@ -36,3 +36,5 @@ print(list2)
 print(list2.count(1))
 
 
+
+#extend function
