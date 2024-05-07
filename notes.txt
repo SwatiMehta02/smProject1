@@ -7,3 +7,40 @@ Create a python package to perform operations
     2.Second Module should have below functionalities: Module Name -> pystr
         1. reverse # reverse string
         2. add # add two string or one number and strings
+
+----------------------------------------------------------------------------------------------------------------
+Virtual env
+-------------
+To run any python script we need python application and packages and modules(libraries)
+Is created to isolate the project specific libraries and modules
+
+----------------------------------------------------------------------------------------------------------------
+module: Single python file which may contain
+    1. Classes
+    2. methods/ functions
+    3. variables
+----------------------------------------------------------------------------------------------------------------
+Package: Collection of modules
+    Consists of:
+        1. __init__.py
+        2. module
+        3. script
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Git
+------
+Remote to local for the first time -> Clone
+Add -> Commit -> Push
+Pull: to fetch the latest changes from remote
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Flow and control
+----------------------
+For loop (iteration)
+Condition
+    -> continue
+    -> break
+
+Formatted String -> txt.format()
+f-string

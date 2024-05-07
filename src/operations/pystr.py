@@ -1,3 +1,5 @@
+author_name = "Swati Mehta"
+
 def reverse_str(x):
     return x[::-1]
 
