@@ -1,40 +1,43 @@
-list1 = [1, 2, 3, '4']  # len = 4
-list2 = list()  # [] : len = 0
-
-# length of list
+list1 = list()
 print(len(list1))
+
+list2 = []
 print(len(list2))
 
-list1.append(5)  # [1,2,3,4,5]
-list1.append(['hello', 5, 7.6])  # [1,2,3,4,5, ['hello', 5, 7.6]]
+print(list1 == list2)
 
-# to find the index
-print(list1)
-# print(list1.index(100))
-list2 = [1, 2, 3, 4, 5, 1, 3, 6, 9, 3, 1, 2, 1, 1, 5]
-print(list2.index(3))
-print(list2.index(3, 4))
-# print(list2.index(3, 4, 5))
+list3 = ["swati", 1, 2, 1.2, True]
+print(list3[2])
+try:
+    print(list3[5])
+except IndexError as ex:
+    print(ex)
+print("asdfghjk")
+
+list3[2] = "mehta"
+print(list3)
+
+# slicing list3[start:stop:step]
+list4 = list3[1::2]
+print(list4)
+
+list5 = [2,4,8,9]
+# addition operator
+list5 = list5 + list3
+print(list5)
+# multiplication operator
+list6 = list5*3
+print(list6)
 
 # remove element
-list2.remove(3)
-print(list2)
+del list6[2]
+print(list6)
 
-# pop element
-list2.pop()
-print(list2)
+del list6[3:8]
+print(list6)
 
-print(list2.pop(4))
-print(list2)
+list7 = [1,2,4,[1,2,3],8,9]
+print(list7[3][2])
 
-# sort list
-# list2.sort()
-list2.sort(reverse=True)
-print(list2)
-
-# count number of
-print(list2.count(1))
-
-
-
-#extend function
+list7[3][1] = 5
+print(list7)
