@@ -1,3 +1,6 @@
+touch - create new file with empty content
+
+
 Dynamic typed language
     No need to mention the data type for the primitive variable declarations
     E.g: Python, JavaScript

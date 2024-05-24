@@ -1,0 +1,11 @@
+mv - move file from one location to another
+touch - create new file with empty content
+rm - remove file (rm <filename1> <filename2>)
+rmdir - remove empty directory
+pwd - present working directory
+cd - change directory
+    .. - to go to previous folder
+ls - list structure
+mkdir - make new directory
+tree - returns tree structure of the folder
+
