@@ -44,7 +44,7 @@ Data Structure:
 
 List/Tuple
 ----------
-linear data
+linear data structure
 
 
 Dict:

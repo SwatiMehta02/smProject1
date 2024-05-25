@@ -16,7 +16,7 @@ y = 4.5
 # print(isinstance(y, int))
 # print(isinstance(y, str))
 # print(isinstance(y, bool))
-#
+# #
 
 
 # z = "Swati"
