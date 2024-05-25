@@ -41,3 +41,20 @@ Data Structure:
     Array
     Stack
     Tree
+
+List/Tuple
+----------
+linear data
+
+
+Dict:
+--------------------
+Address: ["Swati Patna, Bihar, 840001", "Rishav Darbhanga, Bihar, 846004"]
+
+addresses = dict()
+swati_addresse = {
+    "name": "Swati",
+    "city": "Patna",
+    "state": "Bihar",
+    "zip": 840001
+}

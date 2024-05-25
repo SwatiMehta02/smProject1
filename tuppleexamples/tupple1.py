@@ -9,10 +9,10 @@ print(a[2])
 # slice
 print(a[0:3:2])
 # concat tuple
-print(a+(7,8))
+print(a + (7, 8))
 # multiplication of tuple
-print(a*2)
+print(a * 2)
 
-banks = ("sbi","boi","hdfc")
+banks = ("sbi", "boi", "hdfc")
 banks = banks + ('axis',)
 print(banks)
