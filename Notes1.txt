@@ -7,5 +7,6 @@ cd - change directory
     .. - to go to previous folder
 ls - list structure
 mkdir - make new directory
+    -p - to make sub directory if directory is not available
 tree - returns tree structure of the folder
 
