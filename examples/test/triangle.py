@@ -43,4 +43,4 @@ def is_right_angle_triangle(l1, l2, l3):
 # print(is_triangle(1,1,2))
 # print(is_equilateral(1,1,1))
 # print(is_isosceles(1, 3, 2))
-print(is_right_angle_triangle(11,13,5))
+# print(is_right_angle_triangle(11,13,5))
