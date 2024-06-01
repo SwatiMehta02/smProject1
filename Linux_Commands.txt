@@ -1,12 +1,13 @@
 mv - move file from one location to another
 touch - create new file with empty content
-rm - remove file (rm <filename1> <filename2>)
-rmdir - remove empty directory
 pwd - present working directory
 cd - change directory
     .. - to go to previous folder
+rm - remove file (rm <filename1> <filename2>)
 ls - list structure
 mkdir - make new directory
     -p - to make sub directory if directory is not available
 tree - returns tree structure of the folder
-
+grep - to find the pattern
+    - grep <options> pattern file_name/text
+rmdir - remove empty directory
