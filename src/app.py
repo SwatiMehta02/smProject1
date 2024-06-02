@@ -1,4 +1,5 @@
 import os
+from erm.emp_utils import add_emp
 
 
 def prepare_data():
@@ -38,7 +39,10 @@ def prepare_data():
 
 
 def delete_file(file_name):
-    os.remove(file_name)
+    try:
+        os.remove(file_name)
+    except FileNotFoundError as ex:
+        print("file does not exist")
 
 
 file_path = "/mnt/c/Users/RISHAV/OneDrive/Desktop/MyCodeBase/Python/smProject1/src/emp_data.txt"
@@ -47,3 +51,8 @@ delete_file(file_path)
 
 employee = prepare_data()
 print(employee)
+print("-" * 60)
+add_emp(employee, file_path)
+print(employee)
+# employee = add_emp(employee, file_path)
+# print(employee)
