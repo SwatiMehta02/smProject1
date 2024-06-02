@@ -13,7 +13,7 @@ emp_data = {}
 
 count_of_employee = int(input("Enter number of employee:"))
 for count in range(count_of_employee):
-    new_emp =input("enter emp"+str(count+1)+":")
+    new_emp = input("enter emp" + str(count + 1) + ":")
     employee.append(new_emp)
 
 for emp in employee:
@@ -35,4 +35,11 @@ print("-----------------------------------------------------------")
 for emp in emp_data:
     if emp_data.get(emp).get("fullname") == "Swati Mehta":
         emp_data[emp]["age"] += 1
+print(emp_data)
+print("-"*60)
+for emp in emp_data:
+    if emp_data.get(emp).get("age") >= 24:
+        emp_data[emp]["skills"] = ["Java"]
+    else:
+        emp_data[emp]["skills"] = ["python", "docker"]
 print(emp_data)

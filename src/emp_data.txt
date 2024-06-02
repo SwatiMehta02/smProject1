@@ -1,0 +1,2 @@
+1,Swati,Mehta,24,kolkata,patna,tcs,2022,ase,24000
+2,Rishav,Anurag,25,kolkata,patna,tcs,2021,se,24000
