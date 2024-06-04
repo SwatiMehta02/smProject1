@@ -1,5 +1,5 @@
 import os
-from erm.emp_utils import add_emp
+from erm.emp_utils import add_emp, remove_employee
 
 
 def prepare_data():
@@ -50,9 +50,33 @@ file_path = "/mnt/c/Users/RISHAV/OneDrive/Desktop/MyCodeBase/Python/smProject1/s
 delete_file(file_path)
 
 employee = prepare_data()
-print(employee)
-print("-" * 60)
-add_emp(employee, file_path)
-print(employee)
-# employee = add_emp(employee, file_path)
-# print(employee)
+
+print("-" * 40, "Welcome to ERM", "-" * 40)
+
+
+correct = True
+
+while correct:
+    print("1. Add employee")
+    print("2. Remove employee")
+    print("3. Print employee")
+    print("4. Logout")
+    choice = int(input("Enter choice: "))
+    if choice == 1:
+        add_emp(employee, file_path)
+        print("Updated employee data:", employee)
+    elif choice == 2:
+        employee_id = input("Enter employee id to delete: ")
+        remove_status = remove_employee(employee, employee_id)
+        if remove_status:
+            print("Employee id-", employee_id, "successfully deleted")
+        else:
+            print("Employee id-", employee_id, "does not exist")
+    elif choice == 3:
+        print("Updated employee data: ", employee)
+    elif choice == 4:
+        print("Logout ERM")
+        correct = False
+    else:
+        print("Invalid input, please enter correct input")
+
