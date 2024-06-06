@@ -1,0 +1,75 @@
+x="Swati"
+print(list(x))
+-------------
+["S","w","a","t","i"]
+
+
+x=1
+print(list(x))
+-------------
+Type error
+
+x=True
+print(list(x))
+-------------
+TypeError
+
+x={'fname': 'Swati', 'lname': 'Mehta', 'age': 24, 'Salary': '4LPA'}
+print(list(x))
+-------------
+["fname","lname","age","Salary"]
+
+print(tuple(x))
+("fname","lname","age","Salary")
+
+-------------
+x.update({'age': 25, 'Salary': '10LPA', 'promotion_count': 2})
+print(list(x))
+-------------
+["fname","lname","age","Salary","promotion_count"]
+
+print(x)
+-------------
+{"fname":"Swati","lname":"Mehta","age":25,"Salary":"10LPA","promotion_count":2}
+
+for k in x.keys():#["fname","lname","age","Salary","promotion_count"]
+	print(k,end="|")
+-------------
+fname|lname|age|Salary|promotion_count
+
+for v in x.values():#["Swati","Mehta",25,"10LPA",2]
+	print(v)
+-------------
+Swati
+Mehta
+25
+10LPA
+2
+
+for item in x.items():
+	print(item)
+-------------
+("fname","Swati")
+("lname","Mehta")
+("age",25)
+("Salary","10LPA")
+("promotion_count",2)
+
+for item in x.items():[("fname","Swati"),("lname","Mehta"),("age",25),("Salary","10LPA")]
+	print(item[0], item[1])
+-------------
+fname Swati
+lname Mehta
+age 25
+Salary 10LPA
+promotion_count 2
+
+
+for k,v	in x.items():
+	print(k,"::",v)
+-------------
+fname :: Swati
+lname :: Mehta
+age :: 25
+Salary :: 10LPA
+promotion_count :: 2

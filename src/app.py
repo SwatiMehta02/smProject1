@@ -1,6 +1,7 @@
 import os
-from erm.emp_utils import add_emp, remove_employee
-
+# from erm.emp_utils import add_emp, remove_employee
+import erm.emp_utils  as emputils
+# print(dir(emputils))
 
 def prepare_data():
     num = int(input("Enter number of employee:"))
@@ -63,11 +64,11 @@ while correct:
     print("4. Logout")
     choice = int(input("Enter choice: "))
     if choice == 1:
-        add_emp(employee, file_path)
+        emputils.add_emp(employee, file_path)
         print("Updated employee data:", employee)
     elif choice == 2:
         employee_id = input("Enter employee id to delete: ")
-        remove_status = remove_employee(employee, employee_id)
+        remove_status = emputils.remove_employee(employee, employee_id)
         if remove_status:
             print("Employee id-", employee_id, "successfully deleted")
         else:
