@@ -1,0 +1,102 @@
+>>> set1={1,2,3,4,"a"}
+>>> set1
+{1, 2, 3, 4, 'a'}
+>>> set1
+{1, 2, 3, 4, 'a'}
+>>> set1
+{1, 2, 3, 4, 'a'}
+>>> def set_fun(set1):
+...     for i in set1:
+...             print(i)
+...
+>>>
+>>> set_fun(set1)
+1
+2
+3
+4
+a
+>>>
+>>> set_fun(set1)
+1
+2
+3
+4
+a
+>>> set_fun(set1)
+1
+2
+3
+4
+a
+>>> set_fun(set1)
+1
+2
+3
+4
+a
+>>> set_fun(set1)
+1
+2
+3
+4
+a
+>>> a
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> set1
+{1, 2, 3, 4, 'a'}
+>>> 5 in set1
+False
+>>> languages = {'java'}
+>>> langs = {'java'}
+>>> type(langs)
+<class 'set'>
+>>> del langs
+>>> langs
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'langs' is not defined. Did you mean: 'range'?
+>>> langs = set(("java",))
+>>> langs
+{'java'}
+>>> langs = set(("java"))
+>>> langs
+{'v', 'j', 'a'}
+>>> langs = set("java")
+>>> langs
+{'v', 'j', 'a'}
+>>> langs = set(50)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> langs = set(True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'bool' object is not iterable
+>>> langs = set("True")
+>>> langs
+{'e', 'T', 'u', 'r'}
+>>> langs = set({'name':'swati', 'age':24})
+>>> langs
+{'name', 'age'}
+>>> langs = set(["java","python"])
+>>> langs
+{'java', 'python'}
+>>> langs.add('go")
+  File "<stdin>", line 1
+    langs.add('go")
+              ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> langs.add('go')
+>>> langs
+{'java', 'python', 'go'}
+>>> langs.update(("c++",))
+>>> langs
+{'java', 'python', 'go', 'c++'}
+>>> langs.update(("c++",))
+>>> langs.update({"r":"r lang", ".Net": "c#"})
+>>> langs
+{'python', '.Net', 'c++', 'r', 'java', 'go'}
+>>>
